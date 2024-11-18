@@ -1,7 +1,9 @@
 console.log("Welcome to Tic Tac Toe");
 
-let music = new Audio("music1.mp3.mp3"); // Make sure the file name matches exactly
+// Reset the music to start from the beginning on page refresh
+let music = new Audio("music1.mp3.mp3");
 music.loop = true;
+music.currentTime = 0; // This ensures the music starts from the beginning
 music.play();
 
 let gameover = new Audio("gameover.mp3");
